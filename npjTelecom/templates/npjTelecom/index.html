@@ -5,6 +5,12 @@
     <title>index</title>
 </head>
 <body>
-<h1> hello world... this is index page </h>
+    {% for dx in data %} 
+    <h1>name : {{dx.name}}</h1>
+    <h1>address : {{dx.add}}</h1>
+    <h1>mobile No : {{dx.mob}}</h1>
+    <h1>email : {{dx.email}}</h1>
+    {% endfor %}
+
 </body>
 </html>
